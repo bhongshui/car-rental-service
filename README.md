@@ -5,7 +5,7 @@ To keep things simple there is:
 * h2 db
 * lombok and mapstruct
 * no timezone consideration
-* only few tests (one for controller, one for mapper, one for service, one dao)
+* only few tests (one for controller, one for mapper, one for service, one for dao)
 * error handling, configs and converters copy-pasted from another personal project
 * no security, no documentation, no metrics, no logging etc.
 
