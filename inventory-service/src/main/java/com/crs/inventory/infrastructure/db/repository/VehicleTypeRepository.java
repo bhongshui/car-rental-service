@@ -13,8 +13,8 @@ public interface VehicleTypeRepository extends JpaRepository<VehicleTypeEntity, 
   */
   @Query("""
       select t from VehicleTypeEntity t
-       left join fetch t.vehicles v
-       where t.typeUuid = :typeUuid and v.status = :vehicleStatus
+      left join fetch t.vehicles v
+      where t.typeUuid = :typeUuid and v.status = :vehicleStatus
       """)
   Optional<VehicleTypeEntity> getTypeCount(String typeUuid, VehicleStatus vehicleStatus);
 

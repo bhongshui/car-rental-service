@@ -17,10 +17,3 @@ Project structure is based on classical controller-service-repository structure:
 * `domain` is for service layer classes (possible subpackages by domain e.g. vehicle, vehicleType)
 * `infrastructure` is for "repository layer"; it handles repository/database operations (`db` package)
   but also external clients (`client` package); classes involved in sending events could be added there as well
-
-In `infrastructure` there are two types present in each package (`db`/ `client`):
-
-* interfaces (extending spring repositories / annotated with `@Exchange`)
-* service classes using those interfaces (Dao / ClientService)
-
-This allows for layer specific logic to stay within the layer, making domain services simpler
